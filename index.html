@@ -27,21 +27,21 @@
 
 <body>
     <header class="page-header" id="header">
+        <div class="header-container">
+            <nav class="page-navigation container">
+                <a href="#" class="logo-link link">Mobileapp</a>
+                <ul class="menu list">
+                    <li class="menu-item"><a href="#header" class="menu-item-link link">HOME</a></li>
+                    <li class="menu-item"><a href="#section-features" class="menu-item-link link">FEATURES</a></li>
+                    <li class="menu-item"><a href="#section-our-team" class="menu-item-link link">TEAM</a></li>
+                    <li class="menu-item"><a href="#section-testimonials" class="menu-item-link link">TESTIMONIALS</a>
+                    </li>
+                    <li class="menu-item"><a href="#section-contact" class="menu-item-link link">CONTACT</a></li>
+                </ul>
+                <button class="mobile-menu-open-button js-open-menu" type="button"></button>
+            </nav>
+        </div>
         <div class="hero-header-container container">
-            <div class="header-container">
-                <nav class="page-navigation">
-                    <a href="#" class="logo-link">Mobileapp</a>
-                    <ul class="menu list">
-                        <li class="menu-item"><a href="#header" class="menu-item-link">HOME</a></li>
-                        <li class="menu-item"><a href="#section-features" class="menu-item-link">FEATURES</a></li>
-                        <li class="menu-item"><a href="#section-our-team" class="menu-item-link">TEAM</a></li>
-                        <li class="menu-item"><a href="#section-testimonials" class="menu-item-link">TESTIMONIALS</a>
-                        </li>
-                        <li class="menu-item"><a href="#section-contact" class="menu-item-link">CONTACT</a></li>
-                    </ul>
-                    <button class="mobile-menu-open-button" type="button"></button>
-                </nav>
-            </div>
             <div class="hero-container">
                 <h1 class="hero-title">Introducing Mobileapp</h1>
                 <h2 class="titile-list"></h2>
@@ -52,22 +52,39 @@
                 </ul>
                 <button class="button-download">Download</button>
             </div>
+            <picture class="picture-hero-img">
+                <!-- DESKTOP -->
+                <source srcset="./images/desktop/iphone-hero.png 1x, ./images/desktop/iphone-hero@2x.png 2x"
+                    media="(min-width: 1280px)" />
+                <!-- TABLET -->
+                <source srcset="./images/tablet/iphone-hero.png 1x, ./images/tablet/iphone-hero@2x.png 2x"
+                    media="(min-width: 768px)" />
+                <!-- MOBILE -->
+                <source srcset="./images/mobile/iphone-hero.png 1x, ./images/mobile/iphone-hero@2x.png 2x"
+                    media="(min-width: 280px)" />
+                <img class="hero-img" src="./images/desktop/iphone-hero.png"
+                    alt="a picture of a phone with an application open">
+            </picture>
         </div>
-        <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-wrapper js-menu-container">
             <div class="mobile-menu-container">
-                <button class="mobile-menu-close-button" type="button"></button>
-                <a href="#" class="logo-link">Mobileapp</a>
+                <button class="mobile-menu-close-button js-close-menu" type="button"></button>
+                <a href="#" class="logo-link link">Mobileapp</a>
                 <ul class="mobile-menu list">
-                    <li class="mobile-menu-item"><a href="#" class="mobile-menu-item-link">HOME</a></li>
-                    <li class="mobile-menu-item"><a href="#" class="mobile-menu-item-link">FEATURES</a></li>
-                    <li class="mobile-menu-item"><a href="#" class="mobile-menu-item-link">TEAM</a></li>
-                    <li class="mobile-menu-item"><a href="#" class="mobile-menu-item-link">TESTIMONIALS</a></li>
-                    <li class="mobile-menu-item"><a href="#" class="mobile-menu-item-link">CONTACT</a></li>
+                    <li class="mobile-menu-item"><a href="#header" class="mobile-menu-item-link link">HOME</a></li>
+                    <li class="mobile-menu-item"><a href="#section-features"
+                            class="mobile-menu-item-link link">FEATURES</a></li>
+                    <li class="mobile-menu-item"><a href="#section-our-team" class="mobile-menu-item-link link">TEAM</a>
+                    </li>
+                    <li class="mobile-menu-item"><a href="#section-testimonials"
+                            class="mobile-menu-item-link link">TESTIMONIALS</a></li>
+                    <li class="mobile-menu-item"><a href="#section-contact"
+                            class="mobile-menu-item-link link">CONTACT</a></li>
                 </ul>
             </div>
         </div>
-        <img class="hero-img" src="./images/desktop/iphone-hero.png"
-            alt="a picture of a phone with an application open">
+
+
     </header>
 
     <main>
@@ -149,8 +166,22 @@
                         </li>
                     </ul>
                 </div>
-                <img class="watch-video-img" src="./images/desktop/iphone-watch-video.png"
-                    alt="picture of a phone with an open media player">
+                <picture class="picture-watch-wideo-img">
+                    <!-- DESKTOP -->
+                    <source
+                        srcset="./images/desktop/iphone-watch-video.png 1x, ./images/desktop/iphone-watch-video@2x.png 2x"
+                        media="(min-width: 1280px)" />
+                    <!-- TABLET -->
+                    <source
+                        srcset="./images/tablet/iphone-watch-video.png 1x, ./images/tablet/iphone-watch-video@2x.png 2x"
+                        media="(min-width: 768px)" />
+                    <!-- MOBILE -->
+                    <source
+                        srcset="./images/mobile/iphone-watch-video.png 1x, ./images/mobile/iphone-watch-video@2x.png 2x"
+                        media="(min-width: 280px)" />
+                    <img class="watch-video-img" src="./images/desktop/iphone-watch-video.png"
+                        alt="picture of a phone with an open media player">
+                </picture>
             </div>
         </section>
         <!--  -->
@@ -164,26 +195,70 @@
                     goals.</p>
                 <ul class="our-team-list list">
                     <li class="our-team-item">
-                        <img src="./images/desktop/david.png" alt="photo of the employee David Patel"
-                            class="our-team-img">
+                        <picture class="picture-our-team-img">
+                            <!-- DESKTOP -->
+                            <source srcset="./images/desktop/david.png 1x, ./images/desktop/david@2x.png 2x"
+                                media="(min-width: 1280px)" />
+                            <!-- TABLET -->
+                            <source srcset="./images/tablet/david.png 1x, ./images/tablet/david@2x.png 2x"
+                                media="(min-width: 768px)" />
+                            <!-- MOBILE -->
+                            <source srcset="./images/mobile/david.png 1x, ./images/mobile/david@2x.png 2x"
+                                media="(min-width: 280px)" />
+                            <img src="./images/desktop/david.png" alt="photo of the employee David Patel"
+                                class="our-team-img">
+                        </picture>
                         <h3 class="employee-name">David Patel</h3>
                         <h4 class="employee-job-title">Managing Direcor</h4>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/desktop/rachel.png" alt="photo of the employee Rachel Kim"
-                            class="our-team-img">
+                        <picture class="picture-our-team-img">
+                            <!-- DESKTOP -->
+                            <source srcset="./images/desktop/rachel.png 1x, ./images/desktop/rachel@2x.png 2x"
+                                media="(min-width: 1280px)" />
+                            <!-- TABLET -->
+                            <source srcset="./images/tablet/rachel.png 1x, ./images/tablet/rachel@2x.png 2x"
+                                media="(min-width: 768px)" />
+                            <!-- MOBILE -->
+                            <source srcset="./images/mobile/rachel.png 1x, ./images/mobile/rachel@2x.png 2x"
+                                media="(min-width: 280px)" />
+                            <img src="./images/desktop/rachel.png" alt="photo of the employee Rachel Kim"
+                                class="our-team-img">
+                        </picture>
                         <h3 class="employee-name">Rachel Kim</h3>
                         <h4 class="employee-job-title">Lead Designer</h4>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/desktop/samantha.png" alt="photo of the employee Samantha Chen"
-                            class="our-team-img">
+                        <picture class="picture-our-team-img">
+                            <!-- DESKTOP -->
+                            <source srcset="./images/desktop/samantha.png 1x, ./images/desktop/samantha@2x.png 2x"
+                                media="(min-width: 1280px)" />
+                            <!-- TABLET -->
+                            <source srcset="./images/tablet/samantha.png 1x, ./images/tablet/samantha@2x.png 2x"
+                                media="(min-width: 768px)" />
+                            <!-- MOBILE -->
+                            <source srcset="./images/mobile/samantha.png 1x, ./images/mobile/samantha@2x.png 2x"
+                                media="(min-width: 280px)" />
+                            <img src="./images/desktop/samantha.png" alt="photo of the employee Samantha Chen"
+                                class="our-team-img">
+                        </picture>
                         <h3 class="employee-name">Samantha Chen</h3>
                         <h4 class="employee-job-title">Lead Developer</h4>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/desktop/andrew.png" alt="photo of the employee Andrew Nguyen"
-                            class="our-team-img">
+                        <picture class="picture-our-team-img">
+                            <!-- DESKTOP -->
+                            <source srcset="./images/desktop/andrew.png 1x, ./images/desktop/andrew@2x.png 2x"
+                                media="(min-width: 1280px)" />
+                            <!-- TABLET -->
+                            <source srcset="./images/tablet/andrew.png 1x, ./images/tablet/andrew@2x.png 2x"
+                                media="(min-width: 768px)" />
+                            <!-- MOBILE -->
+                            <source srcset="./images/mobile/andrew.png 1x, ./images/mobile/andrew@2x.png 2x"
+                                media="(min-width: 280px)" />
+                            <img src="./images/desktop/andrew.png" alt="photo of the employee Andrew Nguyen"
+                                class="our-team-img">
+                        </picture>
                         <h3 class="employee-name">Andrew Nguyen</h3>
                         <h4 class="employee-job-title">Sr. UI Designer</h4>
                     </li>
@@ -194,10 +269,11 @@
         <section class="section-testimonials" id="section-testimonials">
             <div class="container">
                 <h2 class="section-title">WHAT OUR COSTUMER’S SAY</h2>
-                <div id="slider-container">
+                <div class="slider-container" id="slider-container">
                     <ul class="slider">
                         <li class="slider-item">
-                            <img src="./images/desktop/customer.png" alt="">
+                            <img class="customer-img" srcset="./images/desktop/customer@2x.png 2x"
+                                src="./images/desktop/customer.png" alt="customer photo">
                             <h3 class="customer-name">Jon Doe</h3>
                             <h2 class="customer-company">Company Inc.</h2>
                             <p class="customer-comment">I've been using this app for a few weeks now and I have to say,
@@ -205,7 +281,9 @@
                                 spot-on. Plus, the transactions are secure and the updates are always timely. I would
                                 definitely recommend this app to anyone looking for a better mobile experience.</p>
                         </li>
-                        <li class="slider-item"><img src="./images/desktop/customer.png" alt="">
+                        <li class="slider-item">
+                            <img class="customer-img" srcset="./images/desktop/customer@2x.png 2x"
+                                src="./images/desktop/customer.png" alt="customer photo">
                             <h3 class="customer-name">Jon Doe</h3>
                             <h2 class="customer-company">Company Inc.</h2>
                             <p class="customer-comment">I've been using this app for a few weeks now and I have to say,
@@ -213,7 +291,9 @@
                                 spot-on. Plus, the transactions are secure and the updates are always timely. I would
                                 definitely recommend this app to anyone looking for a better mobile experience.</p>
                         </li>
-                        <li class="slider-item"><img src="./images/desktop/customer.png" alt="">
+                        <li class="slider-item">
+                            <img class="customer-img" srcset="./images/desktop/customer@2x.png 2x"
+                                src="./images/desktop/customer.png" alt="customer photo">
                             <h3 class="customer-name">Jon Doe</h3>
                             <h2 class="customer-company">Company Inc.</h2>
                             <p class="customer-comment">I've been using this app for a few weeks now and I have to say,
@@ -221,7 +301,9 @@
                                 spot-on. Plus, the transactions are secure and the updates are always timely. I would
                                 definitely recommend this app to anyone looking for a better mobile experience.</p>
                         </li>
-                        <li class="slider-item"><img src="./images/desktop/customer.png" alt="">
+                        <li class="slider-item">
+                            <img class="customer-img" srcset="./images/desktop/customer@2x.png 2x"
+                                src="./images/desktop/customer.png" alt="customer photo">
                             <h3 class="customer-name">Jon Doe</h3>
                             <h2 class="customer-company">Company Inc.</h2>
                             <p class="customer-comment">I've been using this app for a few weeks now and I have to say,
@@ -229,7 +311,9 @@
                                 spot-on. Plus, the transactions are secure and the updates are always timely. I would
                                 definitely recommend this app to anyone looking for a better mobile experience.</p>
                         </li>
-                        <li class="slider-item"><img src="./images/desktop/customer.png" alt="">
+                        <li class="slider-item">
+                            <img class="customer-img" srcset="./images/desktop/customer@2x.png 2x"
+                                src="./images/desktop/customer.png" alt="customer photo">
                             <h3 class="customer-name">Jon Doe</h3>
                             <h2 class="customer-company">Company Inc.</h2>
                             <p class="customer-comment">I've been using this app for a few weeks now and I have to say,
@@ -237,7 +321,9 @@
                                 spot-on. Plus, the transactions are secure and the updates are always timely. I would
                                 definitely recommend this app to anyone looking for a better mobile experience.</p>
                         </li>
-                        <li class="slider-item"><img src="./images/desktop/customer.png" alt="">
+                        <li class="slider-item">
+                            <img class="customer-img" srcset="./images/mobile/customer@2x.png 2x"
+                                src="./images/desktop/customer.png" alt="customer photo">
                             <h3 class="customer-name">Jon Doe</h3>
                             <h2 class="customer-company">Company Inc.</h2>
                             <p class="customer-comment">I've been using this app for a few weeks now and I have to say,
@@ -247,7 +333,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="pagination-container">
+                <div class="pagination-container" id="pagination-container">
                     <ul class="pagination">
                         <li class="pagination-item active">.</li>
                         <li class="pagination-item">.</li>
@@ -282,19 +368,19 @@
                         us using the contact form below and our team will respond shortly.</p>
                     <ul class="social-list">
                         <li class="social-item">
-                            <a href="" class="social-item-link">
+                            <a href="" class="social-item-link link">
                                 <svg>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="" class="social-item-link">
+                            <a href="" class="social-item-link link">
                                 <svg>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="" class="social-item-link">
+                            <a href="" class="social-item-link link">
                                 <svg>
                                 </svg>
                             </a>
@@ -323,18 +409,16 @@
     </footer>
 
     <!-- backdrop and modal -->
-    <div class="backdrop is-hidden" data-modal>
+
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <!-- close -->
             <button class="button-close-modal" type="button" data-modal-close>
                 <svg class="icon-close" aria-label="close icon" width="8" height="8">
                     <use href="">
                     </use>
                 </svg>
             </button>
-            <!-- modal title -->
             <p class="modal-title">Download</p>
-            <!-- plans -->
             <div class="wrapper-plans">
                 <div class="card-plan">
                     <svg>
@@ -440,7 +524,7 @@
             <button class="button-modal-download" type="button">Download</button>
 
         </div>
-    </div>
+    </div> -->
 
     <!-- pagination  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -449,9 +533,9 @@
         $(document).ready(function () {
             $(".slider").slick({
                 slidesToShow: 1,
-                speed: 2500,
+                speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 7000
+                autoplaySpeed: 1000
             });
 
             $(".pagination li").click(function () {
