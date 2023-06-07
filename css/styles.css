@@ -48,11 +48,7 @@ address {
 .link {
   text-decoration: none;
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 /*/////////////////////////// COONTAINER SIZES///////////////////////// */
 .container {
   width: 100%;
@@ -130,6 +126,7 @@ address {
   height: 100%;
   padding-top: 182px;
   padding-bottom: 128px;
+  overflow: hidden;
 }
 .hero-container {
   position: relative;
@@ -791,3 +788,240 @@ address {
   color: #ffffff;
 }
 /* /////////////// BACKDROP AND MODAL /////////// */
+.backdrop {
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity var(--default-animation);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 200px;
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--background-color-dark);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 48px;
+}
+.button-close-modal {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+.icon-close-modal {
+  stroke: var(--text-color-light);
+  fill: #ffffff;
+}
+.modal-title {
+  margin-top: 48px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--text-color-light);
+}
+
+.download-form {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper-card-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 232px;
+}
+.label-card {
+  padding-top: 28px;
+  height: 394px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  border: 2px solid #b544fe;
+  cursor: pointer;
+}
+.card-plan-checkbox-standart:checked + .label-card {
+  background-image: var(--background-gradient-colorful);
+}
+.download-label-icon {
+  fill: var(--text-color-light);
+}
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text-color-light);
+}
+.plan-advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 154px;
+}
+.plan-advantages-item {
+  position: relative;
+}
+.plan-advantages-item::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 12px;
+  transform: translatey(-50%);
+  left: -16px;
+  height: 11.67px;
+  width: 8.75px;
+  background-image: url('/images/svg/arrow-modal.svg');
+}
+.advantages-title {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-color-light);
+}
+
+.modal-subtitle {
+  margin-top: 28px;
+  margin-bottom: 25px;
+  width: 100%;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-light);
+}
+.wrapper-information {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 20px 24px;
+  width: 232px;
+  height: 472px;
+  border-radius: 6px;
+  border: 2px solid #b544fe;
+}
+.information-field-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.information-item {
+  display: flex;
+  gap: 8px;
+}
+.information-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.information-icon {
+  fill: var(--text-color-light);
+}
+.item-title-app {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--text-color-light);
+}
+.item-subtitle-app {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1ab9fd;
+}
+
+.button-modal-submit {
+  margin-top: 20px;
+  display: block;
+  padding: 12px 60px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  background-image: var(--background-gradient-colorful);
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--text-color-light);
+  border: none;
+  border-radius: 5px;
+}
+
+/*  
+
+
+
+<div class="wrapper-card-plans">
+    <div class="card-plan">
+        
+    </div>
+    <div class="card-plan">
+
+    </div>
+</div>
+
+<h4 class="modal-subtitle">No matter which plan you choose, we're excited to have you as part of our
+    community of mobile app users!</h4>
+<div class="wrapper-information">
+    
+</div>
+
+</form>
+
+
+*/

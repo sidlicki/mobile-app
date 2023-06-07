@@ -58,7 +58,7 @@
                             class="data-driven-span">data&nbsp;-&nbsp;driven</span> insights</li>
                     <li class="hero-list-item">Offline capabilities for uninterrupted use</li>
                 </ul>
-                <button class="button-download">Download
+                <button class="button-download" data-modal-open>Download
                 </button>
             </div>
             <picture class="picture-hero-img">
@@ -436,121 +436,148 @@
 
     <!-- backdrop and modal -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="button-close-modal" type="button" data-modal-close>
-                <svg class="icon-close" aria-label="close icon" width="8" height="8">
-                    <use href="">
+                <svg class="icon-close-modal" aria-label="close icon" width="15" height="15">
+                    <use href="./images/svg/icons.svg#icon-button-close-mobile-menu">
                     </use>
                 </svg>
             </button>
             <p class="modal-title">Download</p>
-            <div class="wrapper-plans">
-                <div class="card-plan">
-                    <svg>
-                        <use>
-                        </use>
-                    </svg>
-                    <h4 class="card-title">Download free plan</h4>
-                    <ul class="plan-advantages-list list">
-                        <li class="plan-advantages-item">
-                            <p class="advantages-title">Basic functionality</p>
-                        </li>
-                        <li class="plan-advantages-item">
-                            <p class="advantages-title">Limited access</p>
-                        </li>
-                        <li class="plan-advantages-item">
-                            <p class="advantages-title">Community support</p>
-                        </li>
-                    </ul>
+            <form action="#" class="download-form">
+                <div class="wrapper-card-plan">
+                    <input class="card-plan-checkbox-standart visually-hidden" type="checkbox" name="card-plan-free"
+                        id="checkboxfree" checked>
+                    <label class="label-card" for="checkboxfree">
+                        <svg class="download-label-icon" width="80" height="106">
+                            <use href="./images/svg/icons.svg#icon-file-download"></use>
+                        </svg>
+                        <h4 class="card-title">Download free plan</h4>
+                        <ul class="plan-advantages-list list">
+                            <li class="plan-advantages-item">
+                                <p class="advantages-title">Basic functionality</p>
+                            </li>
+                            <li class="plan-advantages-item">
+                                <p class="advantages-title">Limited access</p>
+                            </li>
+                            <li class="plan-advantages-item">
+                                <p class="advantages-title">Community support</p>
+                            </li>
+                        </ul>
+                    </label>
+                    <input class="card-plan-checkbox-standart visually-hidden" type="checkbox" name="card-plan-pay"
+                        id="checkboxpay">
+                    <label class="label-card" for="checkboxpay">
+                        <svg class="download-label-icon" width="80" height="106">
+                            <use href="./images/svg/icons.svg#icon-file-download"></use>
+                        </svg>
+                        <h4 class="card-title">Download for 20$</h4>
+                        <ul class="plan-advantages-list list">
+                            <li class="plan-advantages-item">
+                                <p class="advantages-title">Ad-free experience</p>
+                            </li>
+                            <li class="plan-advantages-item">
+                                <p class="advantages-title">Unlock exclusive features</p>
+                            </li>
+                            <li class="plan-advantages-item">
+                                <p class="advantages-title">Content for the ultimate mobile experience</p>
+                            </li>
+                        </ul>
+                    </label>
                 </div>
-                <div class="card-plan">
-                    <svg>
-                        <use>
-                        </use>
-                    </svg>
-                    <h4 class="card-title">Download for 20$</h4>
-                    <ul class="plan-advantages-list list">
-                        <li class="plan-advantages-item">
-                            <p class="advantages-title">Ad-free experience</p>
-                        </li>
-                        <li class="plan-advantages-item">
-                            <p class="advantages-title">Unlock exclusive features</p>
-                        </li>
-                        <li class="plan-advantages-item">
-                            <p class="advantages-title">Content for the ultimate mobile experience</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <h4 class="modal-subtitle">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In
-                sit amet lectus non lacus </h4>
-            <div class="wrapper-information">
-                <ul class="information-field-list list">
-                    <li class="information-item">
-                        <svg class="information-icon">
-                            <use></use>
-                        </svg>
-                        <p class="item-title-app">App name</p>
-                        <p class="item-subtitle-app">Mobileapp.layout</p>
-                    </li>
-                    <li class="information-item">
-                        <svg class="information-icon">
-                            <use></use>
-                        </svg>
-                        <p class="item-title-app">License</p>
-                        <p class="item-subtitle-app">Free</p>
-                    </li>
-                    <li class="information-item">
-                        <svg class="information-icon">
-                            <use></use>
-                        </svg>
-                        <p class="item-title-app">Author</p>
-                        <p class="item-subtitle-app">Mobile Marrket App.com</p>
-                    </li>
-                    <li class="information-item">
-                        <svg class="information-icon">
-                            <use></use>
-                        </svg>
-                        <p class="item-title-app">Data</p>
-                        <p class="item-subtitle-app">21.02.2022</p>
-                    </li>
-                </ul>
-                <ul class="information-field-list list">
-                    <li class="information-item">
-                        <svg class="information-icon">
-                            <use></use>
-                        </svg>
-                        <p class="item-title-app">OC</p>
-                        <p class="item-subtitle-app">Windows</p>
-                    </li>
-                    <li class="information-item">
-                        <svg class="information-icon">
-                            <use></use>
-                        </svg>
-                        <p class="item-title-app">Language</p>
-                        <p class="item-subtitle-app">English</p>
-                    </li>
-                    <li class="information-item">
-                        <svg class="information-icon">
-                            <use></use>
-                        </svg>
-                        <p class="item-title-app">Size</p>
-                        <p class="item-subtitle-app">4.16 MB</p>
-                    </li>
-                    <li class="information-item">
-                        <svg class="information-icon">
-                            <use></use>
-                        </svg>
-                        <p class="item-title-app">Downloads</p>
-                        <p class="item-subtitle-app">964</p>
-                    </li>
-                </ul>
-            </div>
-            <button class="button-modal-download" type="button">Download</button>
+                <h4 class="modal-subtitle">No matter which plan you choose, we're excited to have you as part of our
+                    community of mobile app users!</h4>
+                <div class="wrapper-information">
+                    <ul class="information-field-list list">
+                        <li class="information-item">
+                            <svg class="information-icon" width="28" height="28">
+                                <use href="./images/svg/icons.svg#icon-android"></use>
+                            </svg>
+                            <span class="information-field">
+                                <p class="item-title-app">App name</p>
+                                <p class="item-subtitle-app">Mobileapp.layout</p>
+                            </span>
 
+                        </li>
+                        <li class="information-item">
+                            <svg class="information-icon" width="28" height="28">
+                                <use href="./images/svg/icons.svg#icon-android"></use>
+                            </svg>
+                            <span class="information-field">
+                                <p class="item-title-app">License</p>
+                                <p class="item-subtitle-app">Free</p>
+                            </span>
+
+                        </li>
+                        <li class="information-item">
+                            <svg class="information-icon" width="28" height="28">
+                                <use href="./images/svg/icons.svg#icon-android"></use>
+                            </svg>
+                            <span class="information-field">
+                                <p class="item-title-app">Author</p>
+                                <p class="item-subtitle-app">Mobile Marrket App.com</p>
+                            </span>
+
+                        </li>
+                        <li class="information-item">
+                            <svg class="information-icon" width="28" height="28">
+                                <use href="./images/svg/icons.svg#icon-android"></use>
+                            </svg>
+                            <span class="information-field">
+                                <p class="item-title-app">Data</p>
+                                <p class="item-subtitle-app">21.02.2022</p>
+                            </span>
+
+                        </li>
+                    </ul>
+                    <ul class="information-field-list list">
+                        <li class="information-item">
+                            <svg class="information-icon" width="28" height="28">
+                                <use href="./images/svg/icons.svg#icon-android"></use>
+                            </svg>
+                            <span class="information-field">
+                                <p class="item-title-app">OC</p>
+                                <p class="item-subtitle-app">Windows</p>
+                            </span>
+
+                        </li>
+                        <li class="information-item">
+                            <svg class="information-icon" width="28" height="28">
+                                <use href="./images/svg/icons.svg#icon-android"></use>
+                            </svg>
+                            <span class="information-field">
+                                <p class="item-title-app">Language</p>
+                                <p class="item-subtitle-app">English</p>
+                            </span>
+
+                        </li>
+                        <li class="information-item">
+                            <svg class="information-icon" width="28" height="28">
+                                <use href="./images/svg/icons.svg#icon-android"></use>
+                            </svg>
+                            <span class="information-field">
+                                <p class="item-title-app">Size</p>
+                                <p class="item-subtitle-app">4.16 MB</p>
+                            </span>
+
+                        </li>
+                        <li class="information-item">
+                            <svg class="information-icon" width="28" height="28">
+                                <use href="./images/svg/icons.svg#icon-android"></use>
+                            </svg>
+                            <span class="information-field">
+                                <p class="item-title-app">Downloads</p>
+                                <p class="item-subtitle-app">964</p>
+                            </span>
+
+                        </li>
+                    </ul>
+                </div>
+                <button id="submitbuttonmodal" class="button-modal-submit" type="submit">Download</button>
+            </form>
         </div>
-    </div> -->
+    </div>
 
     <!-- pagination  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -579,6 +606,30 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
+    <!-- script mobile menu checkbox -->
+    <script>
+        var checkboxfree = document.getElementById('checkboxfree');
+        var checkboxpay = document.getElementById('checkboxpay');
+        var submitbuttonmodal = document.getElementById('submitbuttonmodal');
+
+        checkboxfree.addEventListener('change', function () {
+            if (checkboxfree.checked) {
+                checkboxpay.checked = false;
+                submitbuttonmodal.disabled = false;
+            } else {
+                submitbuttonmodal.disabled = true;
+            }
+        });
+
+        checkboxpay.addEventListener('change', function () {
+            if (checkboxpay.checked) {
+                checkboxfree.checked = false;
+                submitbuttonmodal.disabled = false;
+            } else {
+                submitbuttonmodal.disabled = true;
+            }
+        });
+    </script>
 </body>
 
 </html>
