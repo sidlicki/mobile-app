@@ -533,12 +533,18 @@ address {
 }
 .slider-container {
   margin-top: 40px;
+  max-width: 100%;
 }
 .slider {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-item {
+  max-width: 100%;
 }
 .customer-img {
   margin-left: auto;
