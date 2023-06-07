@@ -180,7 +180,7 @@ address {
   left: -16px;
   height: 12.6px;
   width: 7.2px;
-  background-image: url('/images/svg/arrow-hero.svg');
+  background-image: url(../images/svg/arrow-hero.svg);
 }
 .button-download {
   position: relative;
@@ -372,7 +372,7 @@ address {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-image: url(/images/mobile/iphone-features.png);
+  background-image: url(../images/mobile/iphone-features.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -381,7 +381,7 @@ address {
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .container-for-background-image-key-features {
-    background-image: url(/images/mobile/iphone-features@2x.png);
+    background-image: url(../images/mobile/iphone-features@2x.png);
   }
 }
 .features-list {
@@ -398,7 +398,7 @@ address {
 .title-features-item::after {
   content: '';
   position: absolute;
-  background-image: url(/images/desktop/key-features-icon.png);
+  background-image: url(../images/desktop/key-features-icon.png);
   top: 50%;
   left: -40px;
   transform: translate(0, -50%);
@@ -915,7 +915,7 @@ address {
   left: -16px;
   height: 11.67px;
   width: 8.75px;
-  background-image: url('/images/svg/arrow-modal.svg');
+  background-image: url(../images/svg/arrow-modal.svg);
 }
 .advantages-title {
   font-family: var(--main-font-family);
