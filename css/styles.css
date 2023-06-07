@@ -89,7 +89,7 @@ address {
   z-index: 9;
   position: absolute;
   top: 20px;
-  width: 100vw;
+  width: 100%;
   padding-top: 14px;
   padding-bottom: 14px;
   background: linear-gradient(
